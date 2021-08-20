@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/A0_Temperature/main.cpp$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/A0_Temperature/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/A0_Temperature/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A0_Temperature/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/A0_Temperature/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A0_Temperature/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A0_Temperature/main.cpp$(DependSuffix) -MM main.cpp
+../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix): Temperature.cpp ../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A0_Temperature/Temperature.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Temperature.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix): Temperature.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix) -MM Temperature.cpp
 
-../build-$(ConfigurationName)/A0_Temperature/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A0_Temperature/main.cpp$(PreprocessSuffix) main.cpp
+../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(PreprocessSuffix): Temperature.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(PreprocessSuffix) Temperature.cpp
 
 
 -include ../build-$(ConfigurationName)/A0_Temperature//*$(DependSuffix)
