@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CS_3305" Database="" Version="10000">
+  <Project Name="A0_HelloWorld" Path="A0_HelloWorld/A0_HelloWorld.project" Active="No"/>
+  <Project Name="A0_Temperature" Path="A0_Temperature/A0_Temperature.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="A0_HelloWorld" ConfigName="Debug"/>
+      <Project Name="A0_Temperature" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="A0_HelloWorld" ConfigName="Release"/>
+      <Project Name="A0_Temperature" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
