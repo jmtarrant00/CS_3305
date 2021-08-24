@@ -1,4 +1,8 @@
-
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 0
 
 #include <cassert> // Provides assert function
 #include <cstdlib> // Provides EXIT_SUCCESS
