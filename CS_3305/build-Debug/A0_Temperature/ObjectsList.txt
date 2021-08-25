@@ -1,1 +1,1 @@
-../build-Debug/A0_Temperature/Temperature.cpp.o   
+../build-Debug/A0_Temperature/temperature.cpp.o   

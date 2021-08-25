@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jonathan
-Date                   :=19/08/2021
+Date                   :=23/08/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(ObjectSuffix) 
 
 
 
@@ -93,13 +93,13 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix): Temperature.cpp ../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A0_Temperature/Temperature.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Temperature.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix): Temperature.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(DependSuffix) -MM Temperature.cpp
+../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(ObjectSuffix): temperature.cpp ../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A0_Temperature/temperature.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/temperature.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(DependSuffix): temperature.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(DependSuffix) -MM temperature.cpp
 
-../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(PreprocessSuffix): Temperature.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A0_Temperature/Temperature.cpp$(PreprocessSuffix) Temperature.cpp
+../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(PreprocessSuffix): temperature.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A0_Temperature/temperature.cpp$(PreprocessSuffix) temperature.cpp
 
 
 -include ../build-$(ConfigurationName)/A0_Temperature//*$(DependSuffix)

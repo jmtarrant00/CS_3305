@@ -93,6 +93,6 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="Temperature.cpp"/>
+    <File Name="temperature.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
