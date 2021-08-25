@@ -1,0 +1,5 @@
+RECTANGLE_HPP	C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.hpp	/^#define RECTANGLE_HPP$/;"	macro	line:2
+std	C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.hpp	/^namespace std$/;"	namespace	line:4
+Rectangle	C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.hpp	/^class Rectangle$/;"	class	line:7	namespace:std
+Rectangle	C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.hpp	/^	Rectangle();$/;"	prototype	line:10	class:std::Rectangle	access:public	signature:()
+~Rectangle	C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.hpp	/^	~Rectangle();$/;"	prototype	line:11	class:std::Rectangle	access:public	signature:()
