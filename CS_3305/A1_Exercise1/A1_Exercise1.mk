@@ -6,14 +6,14 @@
 ProjectName            :=A1_Exercise1
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
-ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise1
+WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
+ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A1_Exercise1
 IntermediateDirectory  :=../build-$(ConfigurationName)/A1_Exercise1
 OutDir                 :=../build-$(ConfigurationName)/A1_Exercise1
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=tiger
+User                   :=Jonathan
 Date                   :=24/08/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(ObjectSuffix) ../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix) 
 
 
 
@@ -93,21 +93,21 @@ PreBuild:
 ##
 ## Objects
 ##
-../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp ../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise1/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
-../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix): Rectangle.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix) -MM Rectangle.cpp
-
-../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(PreprocessSuffix): Rectangle.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(PreprocessSuffix) Rectangle.cpp
-
 ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(ObjectSuffix): TestRectangle.cpp ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise1/TestRectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A1_Exercise1/TestRectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(DependSuffix): TestRectangle.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(DependSuffix) -MM TestRectangle.cpp
 
 ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(PreprocessSuffix): TestRectangle.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A1_Exercise1/TestRectangle.cpp$(PreprocessSuffix) TestRectangle.cpp
+
+../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp ../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A1_Exercise1/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix): Rectangle.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(DependSuffix) -MM Rectangle.cpp
+
+../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(PreprocessSuffix): Rectangle.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A1_Exercise1/Rectangle.cpp$(PreprocessSuffix) Rectangle.cpp
 
 
 -include ../build-$(ConfigurationName)/A1_Exercise1//*$(DependSuffix)

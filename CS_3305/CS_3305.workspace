@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CS_3305" Database="" Version="10000">
-  <Project Name="A0_HelloWorld" Path="A0_HelloWorld/A0_HelloWorld.project" Active="Yes"/>
+  <Project Name="A0_HelloWorld" Path="A0_HelloWorld/A0_HelloWorld.project" Active="No"/>
   <Project Name="A0_Temperature" Path="A0_Temperature/A0_Temperature.project" Active="No"/>
-  <Project Name="A1_Exercise1" Path="A1_Exercise1/A1_Exercise1.project" Active="No"/>
+  <Project Name="A1_Exercise1" Path="A1_Exercise1/A1_Exercise1.project" Active="Yes"/>
   <Project Name="A1_Exercise2" Path="A1_Exercise2/A1_Exercise2.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">

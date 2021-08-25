@@ -6,20 +6,25 @@
 
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
+#include <string>
+
+using namespace std;
 
 class Rectangle {
+//member functions
 public:
 	Rectangle();
 	Rectangle(double width, double height);
-	getArea();
-	getPerimeter();
-	printRectangle(String objectName);
+	printRectangle(string objectName);
 	~Rectangle();
-private: 
+private:
+	getArea(double width, double height);
+	getPerimeter(double width, double height);
+// Member variables
 	double width = 1.00;
 	double height = 1.00;
 	double area = 0;
-	double perm = 0;
+	double perimeter = 0;
 };
 
 #endif // RECTANGLE_H
