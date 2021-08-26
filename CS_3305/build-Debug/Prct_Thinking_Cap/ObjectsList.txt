@@ -1,0 +1,1 @@
+../build-Debug/Prct_Thinking_Cap/TestThinkingCap.cpp.o ../build-Debug/Prct_Thinking_Cap/Thinking_Cap.cpp.o   

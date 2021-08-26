@@ -12,5 +12,7 @@ using namespace std;
 
 int main() {
 	Rectangle myRectangle;
-	myRectangle.printRectangle("myRectangle");
+	Rectangle yourRectangle(3,4);
+	myRectangle.printRectangle("myRectangle:");
+	yourRectangle.printRectangle("yourRectangle:");
 }

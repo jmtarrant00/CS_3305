@@ -5,6 +5,7 @@
 // Assignment: 1
 
 #include <iostream>
+#include <iomanip>
 #include "Rectangle.h"
 
 using namespace std;
@@ -32,15 +33,17 @@ Rectangle::getArea(double width, double height) {
 }
 
 Rectangle::printRectangle(string obj) {
-	cout.setf(ios::left);
-	cout.precision(3);
-	cout << obj;
-	cout << "------------";
-	cout << "Width: " << width;
-	cout << "Height: " << height;
-	cout << "Area: " << area;
-	cout << "Perimeter: " << perimeter;
-	cout << "Rectangle " << obj << " is " << width << " units wide and " << height << " units high" << endl;
+	cout.setf(ios::fixed, ios::floatfield);
+	//cout.setf(ios::left, ios::adjustfield);
+	cout.precision(2);
+	cout << obj << '\n';
+	cout << "------------" << '\n';
+	cout << "Width:     " << width << '\n';
+	cout << "Height:    " << height << '\n';
+	cout << "Area:      " << area << '\n';
+	cout << "Perimeter: " << setw(2) << perimeter << '\n';
+	cout << '\n';
+	cout << "Rectangle " << obj << " is " << width << " units wide and " << height << " units high. \n" << endl;
 }
 
 Rectangle::~Rectangle()
