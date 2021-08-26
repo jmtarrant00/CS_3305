@@ -49,32 +49,3 @@ Rectangle::printRectangle(string obj) {
 Rectangle::~Rectangle()
 {
 }
-
-/*class Rectangle {
-  private:
-	double width = 1;
-	double height = 1;
-  public:
-	myRectangle(double width, double height) {
-		double area = getArea(width, height);
-		double perm = getPerimenter(width, height);
-		cout.setf(ios::left);
-		cout.precision(3);
-		cout << "myRectangle";
-		cout << "------------";
-		cout << "Width: " << width;
-		cout << "Height: " << height;
-		cout << "Area: " << area;
-		cout << "Perimeter: " << perm << endl;
-	}
-	
-	getArea(double width, double height) {
-		double area = width * height;
-		return area;
-	}
-	
-	getPerimenter(double width, double height) {
-		double perimeter = (2 * width) + (2 * height);
-		return perimeter;
-	}
-};*/

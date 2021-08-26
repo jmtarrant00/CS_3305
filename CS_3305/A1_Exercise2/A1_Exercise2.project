@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
+    <File Name="DailyTemps.cpp"/>
+    <File Name="DailyTemps.h"/>
+    <File Name="TestTemps.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
