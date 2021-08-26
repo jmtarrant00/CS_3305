@@ -4,7 +4,10 @@
 // Instructor: Dr. Haddad
 // Assignment: 1
 
+#include <iostream>
 #include "Rectangle.h"
+
+using namespace std;
 
 Rectangle::Rectangle() {
 	width = 1.00;
@@ -29,7 +32,15 @@ Rectangle::getArea(double width, double height) {
 }
 
 Rectangle::printRectangle(string obj) {
-	
+	cout.setf(ios::left);
+	cout.precision(3);
+	cout << obj;
+	cout << "------------";
+	cout << "Width: " << width;
+	cout << "Height: " << height;
+	cout << "Area: " << area;
+	cout << "Perimeter: " << perimeter;
+	cout << "Rectangle " << obj << " is " << width << " units wide and " << height << " units high" << endl;
 }
 
 Rectangle::~Rectangle()

@@ -5,10 +5,12 @@
 // Assignment: 1
 
 #include <iostream>
+#include <string>
 #include "Rectangle.h"
 
 using namespace std;
 
 int main() {
 	Rectangle myRectangle;
+	myRectangle.printRectangle("myRectangle");
 }
