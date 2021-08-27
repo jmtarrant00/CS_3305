@@ -4,37 +4,31 @@
 // Instructor: Dr. Haddad
 // Assignment: 1
 
-#include <iostream>
-#include <iomanip>
-#include "Rectangle.h"
+#include <iostream> // Provides input and output
+#include <iomanip>  // Provides setw
+#include "Rectangle.h" // Header file for class
 
 using namespace std;
 
 Rectangle::Rectangle() {
+	// Constructor
 	width = 1.00;
 	height = 1.00;
-	area = getArea(width, height);
+	area = getArea(width, height); 
 	perimeter = getPerimeter(width, height);
 }
 
 Rectangle::Rectangle(double w, double h) {
+	// Constructor with user defined dimensions
 	width = w;
 	height = h;
 	area = getArea(w, h);
 	perimeter = getPerimeter(w, h);
 }
 
-Rectangle::getPerimeter(double width, double height) {
-	return (2 * width) + (2 * height);
-}
-
-Rectangle::getArea(double width, double height) {
-	return (width * height);
-}
-
-Rectangle::printRectangle(string obj) {
+void Rectangle::printRectangle(string obj) {
+	// Prints the stats of the Rectangle
 	cout.setf(ios::fixed, ios::floatfield);
-	//cout.setf(ios::left, ios::adjustfield);
 	cout.precision(2);
 	cout << obj << '\n';
 	cout << "------------" << '\n';

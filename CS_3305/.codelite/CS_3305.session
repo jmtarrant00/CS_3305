@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\GitHub\CS_3305\CS_3305\CS_3305.workspace">
-  <int Value="5" Name="m_selectedTab"/>
+  <int Value="3" Name="m_selectedTab"/>
   <wxString Value="D:\GitHub\CS_3305\CS_3305\CS_3305.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.cpp" Name="FileName"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise2\DailyTemps.h" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="43" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.h" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise2\DailyTemps.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="56" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise2\TestTemps.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise1\TestRectangle.cpp" Name="FileName"/>
       <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
+      <int Value="27" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="9" Name="CurrentLine"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.h" Name="FileName"/>
+      <int Value="4" Name="FirstVisibleLine"/>
+      <int Value="18" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.cpp" Name="FileName"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A1_Exercise1\Rectangle.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\TestThinkingCap.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="26" Name="CurrentLine"/>
+      <int Value="29" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

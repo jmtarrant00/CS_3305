@@ -13,13 +13,13 @@ using namespace std;
 class Rectangle {
 //member functions
 public:
-	Rectangle();
-	Rectangle(double width, double height);
-	printRectangle(string objectName);
+	Rectangle(); // Constructor
+	Rectangle(double width, double height); // Constructor with user defined dimensions 
+	void printRectangle(string objectName); // Prints the stats
 	~Rectangle();
 private:
-	getArea(double width, double height);
-	getPerimeter(double width, double height);
+	getArea(double width, double height) { return (2 * width) + (2 * height); };
+	getPerimeter(double width, double height) { return (width * height); };
 // Member variables
 	double width = 1.00;
 	double height = 1.00;

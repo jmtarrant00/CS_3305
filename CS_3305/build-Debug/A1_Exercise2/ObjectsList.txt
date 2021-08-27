@@ -1,1 +1,1 @@
-../build-Debug/A1_Exercise2/DailyTemps.cpp.o ../build-Debug/A1_Exercise2/TestTemps.cpp.o   
+../build-Debug/A1_Exercise2/TestTemps.cpp.o ../build-Debug/A1_Exercise2/DailyTemps.cpp.o   
