@@ -18,8 +18,8 @@ public:
 	void printRectangle(string objectName); // Prints the stats
 	~Rectangle();
 private:
-	getArea(double width, double height) { return (2 * width) + (2 * height); };
-	getPerimeter(double width, double height) { return (width * height); };
+	getArea(double width, double height) { return (2 * width) + (2 * height); }; // Calculates the area of the rectangle
+	getPerimeter(double width, double height) { return (width * height); }; // Calculates the perimeter of the rectangle
 // Member variables
 	double width = 1.00;
 	double height = 1.00;
