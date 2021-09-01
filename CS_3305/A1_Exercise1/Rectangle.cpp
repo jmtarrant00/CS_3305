@@ -26,20 +26,24 @@ Rectangle::Rectangle(double w, double h) {
 	perimeter = getPerimeter();
 }
 
-double Rectangle::getWidth() {
+double Rectangle::getWidth() const{
+	// Reads the width of the rectangle
 	return width;
 }
 
-double Rectangle::getHeight() {
+double Rectangle::getHeight() const{
+	// Reads the height of the rectangle
 	return height;
 }
 
 double Rectangle::getArea() {
+	// Calculates the area of the rectangle
 	return (width * height);
 }
 
 double Rectangle::getPerimeter() { 
-	return (width * height); 
+	// Calculates the perimeter of the rectangle
+	return (2 * (width + height)); 
 }
 
 void Rectangle::printRectangle(string obj) {
