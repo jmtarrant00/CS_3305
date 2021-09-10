@@ -14,16 +14,36 @@ Rectangle::Rectangle() {
 	// Constructor
 	width = 1.00;
 	height = 1.00;
-	area = getArea(width, height); 
-	perimeter = getPerimeter(width, height);
+	area = getArea(); 
+	perimeter = getPerimeter();
 }
 
 Rectangle::Rectangle(double w, double h) {
 	// Constructor with user defined dimensions
 	width = w;
 	height = h;
-	area = getArea(w, h);
-	perimeter = getPerimeter(w, h);
+	area = getArea();
+	perimeter = getPerimeter();
+}
+
+double Rectangle::getWidth() const{
+	// Reads the width of the rectangle
+	return width;
+}
+
+double Rectangle::getHeight() const{
+	// Reads the height of the rectangle
+	return height;
+}
+
+double Rectangle::getArea() {
+	// Calculates the area of the rectangle
+	return (width * height);
+}
+
+double Rectangle::getPerimeter() { 
+	// Calculates the perimeter of the rectangle
+	return (2 * (width + height)); 
 }
 
 void Rectangle::printRectangle(string obj) {
