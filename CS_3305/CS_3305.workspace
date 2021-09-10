@@ -2,10 +2,11 @@
 <CodeLite_Workspace Name="CS_3305" Database="" Version="10000">
   <Project Name="A0_HelloWorld" Path="A0_HelloWorld/A0_HelloWorld.project" Active="No"/>
   <Project Name="A0_Temperature" Path="A0_Temperature/A0_Temperature.project" Active="No"/>
-  <Project Name="A1_Exercise1" Path="A1_Exercise1/A1_Exercise1.project" Active="Yes"/>
+  <Project Name="A1_Exercise1" Path="A1_Exercise1/A1_Exercise1.project" Active="No"/>
   <Project Name="A1_Exercise2" Path="A1_Exercise2/A1_Exercise2.project" Active="No"/>
   <Project Name="Prct_Throttle" Path="Throttle/Throttle.project" Active="No"/>
   <Project Name="Prct_Thinking_Cap" Path="Prct_Thinking_Cap/Prct_Thinking_Cap.project" Active="No"/>
+  <Project Name="A2_Polynomial" Path="A2_Polynomial/A2_Polynomial.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -15,6 +16,7 @@
       <Project Name="A1_Exercise2" ConfigName="Debug"/>
       <Project Name="Prct_Throttle" ConfigName="Debug"/>
       <Project Name="Prct_Thinking_Cap" ConfigName="Debug"/>
+      <Project Name="A2_Polynomial" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -24,6 +26,7 @@
       <Project Name="A1_Exercise2" ConfigName="Release"/>
       <Project Name="Prct_Throttle" ConfigName="Release"/>
       <Project Name="Prct_Thinking_Cap" ConfigName="Release"/>
+      <Project Name="A2_Polynomial" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

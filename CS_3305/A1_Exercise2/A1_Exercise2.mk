@@ -6,15 +6,15 @@
 ProjectName            :=A1_Exercise2
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
-ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A1_Exercise2
+WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
+ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise2
 IntermediateDirectory  :=../build-$(ConfigurationName)/A1_Exercise2
 OutDir                 :=../build-$(ConfigurationName)/A1_Exercise2
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Jonathan
-Date                   :=26/08/2021
+User                   :=tiger
+Date                   :=02/09/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(ObjectSuffix): TestTemps.cpp ../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A1_Exercise2/TestTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise2/TestTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(DependSuffix): TestTemps.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(DependSuffix) -MM TestTemps.cpp
 
@@ -102,7 +102,7 @@ PreBuild:
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/A1_Exercise2/TestTemps.cpp$(PreprocessSuffix) TestTemps.cpp
 
 ../build-$(ConfigurationName)/A1_Exercise2/DailyTemps.cpp$(ObjectSuffix): DailyTemps.cpp ../build-$(ConfigurationName)/A1_Exercise2/DailyTemps.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A1_Exercise2/DailyTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DailyTemps.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A1_Exercise2/DailyTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/DailyTemps.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A1_Exercise2/DailyTemps.cpp$(DependSuffix): DailyTemps.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A1_Exercise2/DailyTemps.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A1_Exercise2/DailyTemps.cpp$(DependSuffix) -MM DailyTemps.cpp
 
