@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="node1_Test.cpp"/>
     <File Name="node1.cpp"/>
     <File Name="node1.h"/>
   </VirtualDirectory>

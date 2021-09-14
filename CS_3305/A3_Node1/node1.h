@@ -1,3 +1,9 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 3
+
 // FILE: node1.h
 // PROVIDES: A class for a node in a linked list, and list manipulation
 // functions, all within the namespace main_savitch_5
