@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ A1_Exercise2 - Debug ]----------"
-	@cd "A1_Exercise2" && "$(MAKE)" -f  "A1_Exercise2.mk"
+	@echo "----------Building project:[ A2_Polynomial - Debug ]----------"
+	@cd "A2_Polynomial" && "$(MAKE)" -f  "A2_Polynomial.mk"
 clean:
-	@echo "----------Cleaning project:[ A1_Exercise2 - Debug ]----------"
-	@cd "A1_Exercise2" && "$(MAKE)" -f  "A1_Exercise2.mk" clean
+	@echo "----------Cleaning project:[ A2_Polynomial - Debug ]----------"
+	@cd "A2_Polynomial" && "$(MAKE)" -f  "A2_Polynomial.mk" clean

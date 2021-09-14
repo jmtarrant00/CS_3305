@@ -1,3 +1,9 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 1
+
 //========================================================================//
 // IMPORNAT NOTE:                                                         //
 //      This test file will NOT work as is. Please modify this test file  //
@@ -10,7 +16,7 @@
 //     Written by: Kenneth R. Glover - gloverk@colorado.edu               //
 //========================================================================//
 
- #include "poly1.h"  // Provides the polynomial class
+#include "poly1.h"  // Provides the polynomial class
 #include <cctype>   // Provides toupper
 #include <cstdlib>  // Provides EXIT_SUCCESS
 #include <iostream> // Provides cout and cin
