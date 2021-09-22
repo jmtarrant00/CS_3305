@@ -5,7 +5,7 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A3_Node1\node1.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="132" Name="FirstVisibleLine"/>
       <int Value="4" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -20,6 +20,13 @@
     <TabInfo>
       <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A3_Node1\node1_Test.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A1_Exercise2\TestTemps.cpp" Name="FileName"/>
+      <int Value="4" Name="FirstVisibleLine"/>
       <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
