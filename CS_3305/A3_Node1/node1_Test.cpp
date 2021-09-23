@@ -11,12 +11,43 @@
 #include "node1.h" 
 
 using namespace std;
+using namespace main_savitch_5;
+
+void printMenu();
 
 int main() {
+	// declare variables
+	int choice;
 	
+	do {
+		printMenu();
+		cin >> choice;
+		switch(choice) {
+			case 1:
+				cout << "List Length" << endl;
+				break;
+			case 2: 
+				cout << "Head Insert" << endl;
+				break;
+			case 3: 
+				cout << "List Insert" << endl;
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+			case 9:
+			case 10:
+			case 11:
+			case 12:
+			default:
+				cout << choice << " is an invalid option. Please enter a valid option to continue" << endl;
+		}
+	} while (choice != 12);
 }
 
 void printMenu(){
+	cout << "\n";
 	cout << "------------- MAIN MENU ------------------" << endl;
 	cout << "1: Test Function std::size_list_length" << endl;
 	cout << "2: Test Function void list_head_insert" << endl;
