@@ -11,7 +11,7 @@
 // INVARIANT for the node class:
 //   The data of a node is stored in data_field, and the link in link_field.
 
-#include "node1.h"
+#include "node1_New.h"
 #include <cassert>    // Provides assert
 #include <cstdlib>    // Provides NULL and size_t
 using namespace std;
@@ -130,5 +130,17 @@ namespace main_savitch_5 {
 			source_ptr = source_ptr->link( );
 		}
     }
+	
+	node* delete_reps(node* head_ptr) {
+		int i = 1
+		node *cursor;
+		node *vals = NULL;
+		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()){
+			if (list_search(vals, cursor -> data()) == NULL) {
+				list_insert(vals, i)
+			} 
+		} 
+		return vals;
+	}
 
 }
