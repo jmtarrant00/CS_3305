@@ -132,15 +132,30 @@ namespace main_savitch_5 {
     }
 	
 	node* delete_reps(node* head_ptr) {
-		int i = 1
+		int i = 1;
 		node *cursor;
 		node *vals = NULL;
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()){
 			if (list_search(vals, cursor -> data()) == NULL) {
 				list_insert(vals, i)
 			} 
+			int++; 
 		} 
 		return vals;
+	}
+	
+	void sort_list(node*& head_ptr) {
+		double largest = 0;
+		node::value_type data;
+		node *cursor;
+		node *list_sort = NULL;
+		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()) {
+			data = cursor -> data()
+			if (data >= largest) {
+				largest = data;
+				list_head_insert(data);
+			}
+		}
 	}
 
 }

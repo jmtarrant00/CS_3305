@@ -217,9 +217,9 @@ void display(node* grade_ptr) {
 		cout << "The list is empty" << endl;
 		return;
 	}
-	cout << "Grades List";
+	cout << "Grades List: ";
 	for (cursor = grade_ptr; cursor != NULL; cursor = cursor -> link()) {
-		cout << "[" << cursor -> data() << "]";
+		cout << "[" << cursor -> data() << "] ";
 	}
 	cout << endl;
 	list_clear(cursor);

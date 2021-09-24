@@ -8,7 +8,7 @@
 #include <String>
 #include <iostream>
 #include <cassert> // Provides assert
-#include "node1_New.h" 
+#include "node1.h" 
 
 using namespace std;
 using namespace main_savitch_5;
@@ -217,9 +217,9 @@ void display(node* grade_ptr) {
 		cout << "The list is empty" << endl;
 		return;
 	}
-	cout << "Grades List";
+	cout << "Grades List: ";
 	for (cursor = grade_ptr; cursor != NULL; cursor = cursor -> link()) {
-		cout << "[" << cursor -> data() << "]";
+		cout << "[" << cursor -> data() << "] ";
 	}
 	cout << endl;
 	list_clear(cursor);
