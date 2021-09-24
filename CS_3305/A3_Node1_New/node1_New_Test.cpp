@@ -8,7 +8,7 @@
 #include <String>
 #include <iostream>
 #include <cassert> // Provides assert
-#include "node1.h" 
+#include "node1_New.h" 
 
 using namespace std;
 using namespace main_savitch_5;
@@ -165,13 +165,35 @@ int main() {
 			case 12:
 				// this option displays the list 
 				display(gradesList);
+				break;
 			case 13:
+				// this option will remove all repearted items from the list
+				cout << "gradesList before operation: " << endl;
+				display(gradesList);
+				
+				
+				cout << "gradesList after operation: " << endl;
+				display(delete_reps(gradesList));
+			case 14:
+				// This option will sort the list using a selection sort
+				sort_list(gradesList);
+				display(gradesList);
+				break;
+			case 15:
+				// This option will split the list at a desired number
+				display(gradesList);
+				cout << "What grade do you want to split the list at?" << endl;
+				cin >> grade;
+				display(split_list(gradesList, grade));
+				
+				break;
+			case 16:
 				cout << "Exiting Program..." << endl;
 				break;
 			default:
 				cout << choice << " is an invalid option. Please enter a valid option to continue" << endl;
 		}
-	} while (choice != 13);
+	} while (choice != 16);
 	return EXIT_SUCCESS;
 }
 
@@ -191,7 +213,10 @@ void printMenu(){
 	cout << "10: Test Function void list_clear" << endl;
 	cout << "11: Test Function void list_copy" << endl;
 	cout << "12: Display List" << endl;
-	cout << "13: Exit Program" << endl;
+	cout << "13: Test Function node *delete_reps" << endl;
+	cout << "14: Test Function void sort_list" << endl;
+	cout << "15: Test Function node *split_list" << endl;
+	cout << "16: Exit Program" << endl;
 	cout << '\n';
 	cout << "Enter option number" << endl;
 }

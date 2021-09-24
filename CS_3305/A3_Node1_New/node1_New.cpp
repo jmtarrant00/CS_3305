@@ -12,6 +12,7 @@
 //   The data of a node is stored in data_field, and the link in link_field.
 
 #include "node1_New.h"
+#include <iostream>
 #include <cassert>    // Provides assert
 #include <cstdlib>    // Provides NULL and size_t
 using namespace std;
@@ -132,14 +133,18 @@ namespace main_savitch_5 {
     }
 	
 	node* delete_reps(node* head_ptr) {
-		int i = 1;
+//		int i = 1;
 		node *cursor;
 		node *vals = NULL;
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()){
 			if (list_search(vals, cursor -> data()) == NULL) {
-				list_insert(vals, i);
+				if (vals == NULL) {
+					list_head_insert(vals, cursor -> data());
+				} else {
+					list_insert(list_locate(vals, list_length(vals)), cursor -> data());
+				}
 			} 
-			i++; 
+//			i++; 
 		} 
 		return vals;
 	}
@@ -149,20 +154,40 @@ namespace main_savitch_5 {
 		node::value_type data;
 		node *cursor;
 		node *list_sort = NULL;
-		node *previous_ptr;
+		node *previous_ptr = head_ptr;
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()) {
 			data = cursor -> data();
 			if (data >= largest) {
 				largest = data;
+				cout << "Largest: " << largest << endl;
+//				list_remove(previous_ptr);
 				list_head_insert(list_sort, data);
-				list_remove(previous_ptr -> link());
 			}
 			previous_ptr = cursor;
 		}
+//		gradesList = list_sort;
 	}
 	
 	node* split_list(node* head_ptr, node::value_type& split_value) {
-		
+		double index = 1;
+		node *cursor;
+		node *list2 = NULL;
+		node *previous_ptr = head_ptr;
+		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()) {
+			if (cursor -> data() == split_value) {
+				if (list_length(list2) == NULL) {
+					list_head_insert(list2, cursor -> data());
+				} else {
+					list_insert(list_locate(list2, list_length(list2)), cursor -> data());
+				}
+				list_remove(previous_ptr -> link());
+			}
+			index++;
+			previous_ptr = cursor;
+		}
+//		return cursor;
+		return list2;
+
 	}
 
 }
