@@ -137,9 +137,9 @@ namespace main_savitch_5 {
 		node *vals = NULL;
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()){
 			if (list_search(vals, cursor -> data()) == NULL) {
-				list_insert(vals, i)
+				list_insert(vals, i);
 			} 
-			int++; 
+			i++; 
 		} 
 		return vals;
 	}
@@ -149,13 +149,20 @@ namespace main_savitch_5 {
 		node::value_type data;
 		node *cursor;
 		node *list_sort = NULL;
+		node *previous_ptr;
 		for (cursor = head_ptr; cursor != NULL; cursor = cursor -> link()) {
-			data = cursor -> data()
+			data = cursor -> data();
 			if (data >= largest) {
 				largest = data;
-				list_head_insert(data);
+				list_head_insert(list_sort, data);
+				list_remove(previous_ptr -> link());
 			}
+			previous_ptr = cursor;
 		}
+	}
+	
+	node* split_list(node* head_ptr, node::value_type& split_value) {
+		
 	}
 
 }

@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ A0_Temperature - Debug ]----------"
-	@cd "A0_Temperature" && "$(MAKE)" -f  "A0_Temperature.mk"
+	@echo "----------Building project:[ A3_Node1_New - Debug ]----------"
+	@cd "A3_Node1_New" && "$(MAKE)" -f  "A3_Node1_New.mk"
 clean:
-	@echo "----------Cleaning project:[ A0_Temperature - Debug ]----------"
-	@cd "A0_Temperature" && "$(MAKE)" -f  "A0_Temperature.mk" clean
+	@echo "----------Cleaning project:[ A3_Node1_New - Debug ]----------"
+	@cd "A3_Node1_New" && "$(MAKE)" -f  "A3_Node1_New.mk" clean
