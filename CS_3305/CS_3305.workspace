@@ -8,7 +8,8 @@
   <Project Name="Prct_Thinking_Cap" Path="Prct_Thinking_Cap/Prct_Thinking_Cap.project" Active="No"/>
   <Project Name="A2_Polynomial" Path="A2_Polynomial/A2_Polynomial.project" Active="No"/>
   <Project Name="A3_Node1" Path="A3_Node1/A3_Node1.project" Active="No"/>
-  <Project Name="A3_Node1_New" Path="A3_Node1_New/A3_Node1_New.project" Active="Yes"/>
+  <Project Name="A3_Node1_New" Path="A3_Node1_New/A3_Node1_New.project" Active="No"/>
+  <Project Name="A4_Stacks" Path="A4_Stacks/A4_Stacks.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -22,6 +23,7 @@
       <Project Name="A3_Node1" ConfigName="Debug"/>
       <Project Name="A3_Node1" ConfigName="Debug"/>
       <Project Name="A3_Node1_New" ConfigName="Debug"/>
+      <Project Name="A4_Stacks" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -35,6 +37,7 @@
       <Project Name="A3_Node1" ConfigName="Release"/>
       <Project Name="A3_Node1" ConfigName="Release"/>
       <Project Name="A3_Node1_New" ConfigName="Release"/>
+      <Project Name="A4_Stacks" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
