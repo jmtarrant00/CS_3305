@@ -1,46 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\GitHub\CS_3305\CS_3305\CS_3305.workspace">
-  <int Value="1" Name="m_selectedTab"/>
+  <int Value="0" Name="m_selectedTab"/>
   <wxString Value="D:\GitHub\CS_3305\CS_3305\CS_3305.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1_New\node1_New.h" Name="FileName"/>
-      <int Value="132" Name="FirstVisibleLine"/>
-      <int Value="179" Name="CurrentLine"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A4_Stacks\testStack.cpp" Name="FileName"/>
+      <int Value="42" Name="FirstVisibleLine"/>
+      <int Value="56" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1_New\node1_New.cpp" Name="FileName"/>
-      <int Value="127" Name="FirstVisibleLine"/>
-      <int Value="156" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1_New\node1_New_Test.cpp" Name="FileName"/>
-      <int Value="150" Name="FirstVisibleLine"/>
-      <int Value="179" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1\node1_Test.cpp" Name="FileName"/>
-      <int Value="154" Name="FirstVisibleLine"/>
-      <int Value="212" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A0_HelloWorld\HelloWorld.cpp" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A4_Queues\testPalindrome.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="D:\GitHub\CS_3305\CS_3305\A0_Temperature\temperature.cpp" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1_New\node1_New_Test.cpp" Name="FileName"/>
+      <int Value="7" Name="FirstVisibleLine"/>
       <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>

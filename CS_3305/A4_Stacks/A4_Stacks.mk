@@ -6,14 +6,14 @@
 ProjectName            :=A4_Stacks
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
-ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A4_Stacks
+WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
+ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A4_Stacks
 IntermediateDirectory  :=../build-$(ConfigurationName)/A4_Stacks
 OutDir                 :=../build-$(ConfigurationName)/A4_Stacks
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=tiger
+User                   :=Jonathan
 Date                   :=27/09/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/A4_Stacks/testStack.cpp$(ObjectSuffix): testStack.cpp ../build-$(ConfigurationName)/A4_Stacks/testStack.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A4_Stacks/testStack.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testStack.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A4_Stacks/testStack.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testStack.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A4_Stacks/testStack.cpp$(DependSuffix): testStack.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A4_Stacks/testStack.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A4_Stacks/testStack.cpp$(DependSuffix) -MM testStack.cpp
 
