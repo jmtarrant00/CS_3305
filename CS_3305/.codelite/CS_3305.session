@@ -5,22 +5,29 @@
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
       <wxString Value="D:\GitHub\CS_3305\CS_3305\A4_Stacks\testStack.cpp" Name="FileName"/>
-      <int Value="42" Name="FirstVisibleLine"/>
-      <int Value="56" Name="CurrentLine"/>
+      <int Value="62" Name="FirstVisibleLine"/>
+      <int Value="83" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\GitHub\CS_3305\CS_3305\A4_Queues\testPalindrome.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="3" Name="FirstVisibleLine"/>
       <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\GitHub\CS_3305\CS_3305\A3_Node1_New\node1_New_Test.cpp" Name="FileName"/>
-      <int Value="7" Name="FirstVisibleLine"/>
+      <int Value="6" Name="FirstVisibleLine"/>
       <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\GitHub\CS_3305\CS_3305\Prct_Stacks\stacks.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
