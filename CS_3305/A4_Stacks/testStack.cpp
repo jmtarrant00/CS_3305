@@ -15,16 +15,21 @@ using namespace std;
 
 void printMenu();
 void userInput();
+template<class Item1> stack<Item1> clrStack(stack<Item1> clearStack);
+
 template <class Item>
 void topToBottom(stack<Item> prtStack);
-void bottomToTop(const stack<double> bttStack);
+void bottomToTop(stack<double> bttStack);
 stack<string> flipStack(stack<string>& fpStack);
-bool searchStack(stack<int>& srchStack, int target);
+bool searchStack(stack<int> srchStack, int target);
 
 int main() {
 	int choice;
 	int num1;
+	double num2;
+	string str1;
 	stack<int> intStack;
+	stack<double> dblStack;
 	do {
 		printMenu();
 		cout << "Please choose an option: ";
@@ -32,8 +37,8 @@ int main() {
 		cout << endl;
 		switch(choice) {
 			case 1:
-				cout << "Test topToBottom with int stack" << endl;
-				cout << "Please enter 5 numbers" << endl;
+				cout << "---------topToBottom---------" << endl;
+				cout << "Please enter 5 integers" << endl;
 				for (int i = 0; i < 5; i++) {
 					cin >> num1;
 					intStack.push(num1);
@@ -44,9 +49,21 @@ int main() {
 				cout << "Function output: ";
 				topToBottom(intStack);
 				cout << endl;
+				intStack = clrStack(intStack);
 				break;
 			case 2:
-				cout << "Test bottomToTop with int stack" << endl;
+				cout << "Please enter 5 non-integers" << endl;
+				for (int i = 0; i < 5; i++) {
+					cin >> num2;
+					dblStack.push(num2);
+				}
+				cout << "Testing function bottomToTop" << endl;
+				cout << "Stack Content:   ";
+				topToBottom(dblStack);
+				cout << "Function Output: ";
+				bottomToTop(dblStack);
+				cout << endl;
+				dblStack = clrStack(dblStack);
 				break;
 			case 3:
 				cout << "Test flipStack with str stack" << endl;
@@ -74,40 +91,65 @@ void printMenu() {
 void userInput() {
 	
 }
+
+template<class Item1> stack<Item1> clrStack(stack<Item1> clearStack) {
+	while(!clearStack.empty()) {
+		clearStack.pop();
+	}
+	
+	return clearStack;
+}
+
 template<class Item>
 void topToBottom(stack<Item> prtStack) {
 	stack<Item> store;
 	Item temp;
-	while (!prtStack.empty()) {
-		temp = prtStack.top();
-		cout << temp << " ";
-		prtStack.pop();
-		store.push(temp);
+	if (prtStack.empty() == true) {
+		cout << "The stack is empty" << endl;
+	} else {
+		while (!prtStack.empty()) {
+			temp = prtStack.top();
+			cout << temp << " ";
+			prtStack.pop();
+			store.push(temp);
+		}
+		while (!store.empty()) {
+			temp = store.top();
+			store.pop();
+			prtStack.push(temp);
+		}
+		cout << endl;
 	}
-	while (!store.empty()) {
+}
+
+void bottomToTop(stack<double> bttStack) {
+	stack<double> store;
+	double temp;
+	while (!bttStack.empty()) {
+		temp = bttStack.top();
+		store.push(temp);
+		bttStack.pop();
+	}
+	while(!store.empty()) {
 		temp = store.top();
+		cout << temp << " ";
 		store.pop();
-		prtStack.push(temp);
+		bttStack.push(temp);
 	}
-	cout << endl;
 }
 
-void bottomToTop(const stack<double> bttStack) {
-	
-}
+//stack<string> flipStack(stack<string>*& fpStack) {
+//	stack<string> store;
+//	string temp;
+//	for (size_t i = 0; i < fpStack->size(); i++) {
+//		temp = fpStack->top();
+//		fpStack->pop();
+//		store.push(temp);
+//	}
+//	return fpStack;
+//}
 
-stack<string> flipStack(stack<string>& fpStack) {
-	stack<string> store;
-	string temp;
-	for (size_t i = 0; i < fpStack.size(); i++) {
-		temp = fpStack.top();
-		fpStack.pop();
-		store.push(temp);
-	}
-	return fpStack;
-}
-
-bool searchStack(stack<int> &srchStack, int target) {
+bool searchStack(stack<int> srchStack, int target) {
 	stack<int> store;
 	int temp;
 	bool found;
