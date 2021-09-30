@@ -20,16 +20,19 @@ template<class Item1> stack<Item1> clrStack(stack<Item1> clearStack);
 template <class Item>
 void topToBottom(stack<Item> prtStack);
 void bottomToTop(stack<double> bttStack);
-stack<string> flipStack(stack<string>& fpStack);
+stack<string> flipStack(stack<string> fpStack);
 bool searchStack(stack<int> srchStack, int target);
 
 int main() {
 	int choice;
 	int num1;
+	int target;
 	double num2;
 	string str1;
+	bool srch;
 	stack<int> intStack;
 	stack<double> dblStack;
+	stack<string> strStack;
 	do {
 		printMenu();
 		cout << "Please choose an option: ";
@@ -40,6 +43,7 @@ int main() {
 				cout << "---------topToBottom---------" << endl;
 				cout << "Please enter 5 integers" << endl;
 				for (int i = 0; i < 5; i++) {
+					cout << i + 1 << ": ";
 					cin >> num1;
 					intStack.push(num1);
 				}
@@ -52,8 +56,10 @@ int main() {
 				intStack = clrStack(intStack);
 				break;
 			case 2:
+				cout << "---------bottomToTop---------" << endl;
 				cout << "Please enter 5 non-integers" << endl;
 				for (int i = 0; i < 5; i++) {
+					cout << i + 1 << ": ";
 					cin >> num2;
 					dblStack.push(num2);
 				}
@@ -66,10 +72,43 @@ int main() {
 				dblStack = clrStack(dblStack);
 				break;
 			case 3:
+				cout << "----------flipStack----------" << endl;
 				cout << "Test flipStack with str stack" << endl;
+				cout << "Please enter 5 strings" << endl;
+				for (int i = 0; i < 5; i++) {
+					cout << i + 1 << ": ";
+					cin >> str1;
+					strStack.push(str1);
+				}
+				cout << "Testing Function flipStack" << endl;
+				cout << "Stack Content:   ";
+				topToBottom(strStack);
+				cout << "Function Output: ";
+				strStack = flipStack(strStack);
+				topToBottom(strStack);
 				break;
 			case 4:
+				cout << "---------searchStack---------" << endl;
 				cout << "Test searchStack with int stack" << endl;
+				cout << "Please enter 5 integers" << endl;
+				for (int i = 0; i < 5; i++) {
+					cout << i + 1 << ": ";
+					cin >> num1;
+					intStack.push(num1);
+				}
+				cout << "Please enter a value to searh for: ";
+				cin >> target;
+				cout << "\n" << "Testing Function searchStack" << endl;
+				cout << "Stack Contents: ";
+				topToBottom(intStack);
+				cout << "Target value:   " << target << endl;
+				srch = searchStack(intStack, target);
+				if (srch == 1) {
+					cout << "True" << endl;
+				} else {
+					cout << "False" << endl;
+				}
+				intStack = clrStack(intStack);
 				break;
 			case 5:
 				cout << "Exiting Program... " << endl;
@@ -138,22 +177,22 @@ void bottomToTop(stack<double> bttStack) {
 	}
 }
 
-//stack<string> flipStack(stack<string>*& fpStack) {
-//	stack<string> store;
-//	string temp;
-//	for (size_t i = 0; i < fpStack->size(); i++) {
-//		temp = fpStack->top();
-//		fpStack->pop();
-//		store.push(temp);
-//	}
-//	return fpStack;
-//}
+stack<string> flipStack(stack<string> fpStack) {
+	stack<string> store;
+	string temp;
+	while(!fpStack.empty()) {
+		temp = fpStack.top();
+		fpStack.pop();
+		store.push(temp);
+	}
+	return store;
+}
 
 bool searchStack(stack<int> srchStack, int target) {
 	stack<int> store;
 	int temp;
 	bool found;
-	for (size_t i = 0; i < srchStack.size(); i++) {
+	while (!srchStack.empty()) {
 		temp = srchStack.top();
 		srchStack.pop();
 		if (temp == target) {
@@ -162,7 +201,7 @@ bool searchStack(stack<int> srchStack, int target) {
 		}
 		store.push(temp);
 	}
-	for (size_t i = 0; i < store.size(); i++) {
+	while(!store.empty()) {
 		temp = store.top();
 		store.pop();
 		srchStack.push(temp);
