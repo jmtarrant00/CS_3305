@@ -6,15 +6,15 @@
 ProjectName            :=Prct_Stacks
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
-ProjectPath            :=D:/GitHub/CS_3305/CS_3305/Prct_Stacks
+WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
+ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/Prct_Stacks
 IntermediateDirectory  :=../build-$(ConfigurationName)/Prct_Stacks
 OutDir                 :=../build-$(ConfigurationName)/Prct_Stacks
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Jonathan
-Date                   :=28/09/2021
+User                   :=tiger
+Date                   :=29/09/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/Prct_Stacks/stacks.cpp$(ObjectSuffix): stacks.cpp ../build-$(ConfigurationName)/Prct_Stacks/stacks.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/Prct_Stacks/stacks.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/stacks.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/Prct_Stacks/stacks.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/stacks.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/Prct_Stacks/stacks.cpp$(DependSuffix): stacks.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/Prct_Stacks/stacks.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/Prct_Stacks/stacks.cpp$(DependSuffix) -MM stacks.cpp
 

@@ -12,12 +12,14 @@
 
 using namespace std;
 
+
 void printMenu();
 void userInput();
-void topToBottom(stack<int> stack);
-void bottomToTop(const stack<double> stack);
-stack<string> flipStack(stack<string>& stack);
-bool searchStack(stack<int>& stack, int target);
+template <class Item>
+void topToBottom(stack<Item> prtStack);
+void bottomToTop(const stack<double> bttStack);
+stack<string> flipStack(stack<string>& fpStack);
+bool searchStack(stack<int>& srchStack, int target);
 
 int main() {
 	int choice;
@@ -36,7 +38,12 @@ int main() {
 					cin >> num1;
 					intStack.push(num1);
 				}
+				cout << "Testing function topToBottom: " << endl;
+				cout << "Stack content:   ";
 				topToBottom(intStack);
+				cout << "Function output: ";
+				topToBottom(intStack);
+				cout << endl;
 				break;
 			case 2:
 				cout << "Test bottomToTop with int stack" << endl;
@@ -67,44 +74,56 @@ void printMenu() {
 void userInput() {
 	
 }
-
-void topToBottom(stack<int> stack) {
-	for (int i = 0; i <= stack.size(); i++) {
-		cout << stack.top() << " ";
+template<class Item>
+void topToBottom(stack<Item> prtStack) {
+	stack<Item> store;
+	Item temp;
+	while (!prtStack.empty()) {
+		temp = prtStack.top();
+		cout << temp << " ";
+		prtStack.pop();
+		store.push(temp);
+	}
+	while (!store.empty()) {
+		temp = store.top();
+		store.pop();
+		prtStack.push(temp);
 	}
 	cout << endl;
 }
 
-void bottomToTop(const stack<double> stack) {
+void bottomToTop(const stack<double> bttStack) {
 	
 }
 
-//stack<string> flipStack(stack<string>& stack) {
-//	stack<string> store;
-//	string temp;
-//	for (int i = 0; i < stack.size(); i++) {
-//		temp = stack.pop()
-//		store.push(temp);
-//	}
-//}
+stack<string> flipStack(stack<string>& fpStack) {
+	stack<string> store;
+	string temp;
+	for (size_t i = 0; i < fpStack.size(); i++) {
+		temp = fpStack.top();
+		fpStack.pop();
+		store.push(temp);
+	}
+	return fpStack;
+}
 
-bool searchStack(stack<int> stack, int target) {
+bool searchStack(stack<int> &srchStack, int target) {
 	stack<int> store;
 	int temp;
 	bool found;
-	for (int i = 0; i < stack.size(); i++) {
-		temp = stack.top();
-		stack.pop();
+	for (size_t i = 0; i < srchStack.size(); i++) {
+		temp = srchStack.top();
+		srchStack.pop();
 		if (temp == target) {
 			found = true;
 			break;
 		}
 		store.push(temp);
 	}
-	for (int i = 0; i < store.size(); i++) {
+	for (size_t i = 0; i < store.size(); i++) {
 		temp = store.top();
 		store.pop();
-		stack.push(temp);
+		srchStack.push(temp);
 	}
 	return found;
 }
