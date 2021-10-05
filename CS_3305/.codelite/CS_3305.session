@@ -4,16 +4,23 @@
   <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\CS_3305.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A4_Stacks\testStack.cpp" Name="FileName"/>
-      <int Value="129" Name="FirstVisibleLine"/>
-      <int Value="51" Name="CurrentLine"/>
+      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A4_Queues\testPalindrome.cpp" Name="FileName"/>
+      <int Value="41" Name="FirstVisibleLine"/>
+      <int Value="58" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\Prct_Stacks\stacks.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\Prct_Queues\Queues.cpp" Name="FileName"/>
+      <int Value="19" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\tiger\Documents\GitHub\CS_3305\CS_3305\A4_Stacks\testStack.cpp" Name="FileName"/>
+      <int Value="76" Name="FirstVisibleLine"/>
+      <int Value="160" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

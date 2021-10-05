@@ -6,15 +6,15 @@
 ProjectName            :=A0_HelloWorld
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
-ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A0_HelloWorld
+WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
+ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A0_HelloWorld
 IntermediateDirectory  :=../build-$(ConfigurationName)/A0_HelloWorld
 OutDir                 :=../build-$(ConfigurationName)/A0_HelloWorld
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Jonathan
-Date                   :=24/09/2021
+User                   :=tiger
+Date                   :=01/10/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/A0_HelloWorld/HelloWorld.cpp$(ObjectSuffix): HelloWorld.cpp ../build-$(ConfigurationName)/A0_HelloWorld/HelloWorld.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A0_HelloWorld/HelloWorld.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HelloWorld.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A0_HelloWorld/HelloWorld.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HelloWorld.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A0_HelloWorld/HelloWorld.cpp$(DependSuffix): HelloWorld.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A0_HelloWorld/HelloWorld.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A0_HelloWorld/HelloWorld.cpp$(DependSuffix) -MM HelloWorld.cpp
 
