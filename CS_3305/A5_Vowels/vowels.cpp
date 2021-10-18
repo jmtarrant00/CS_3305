@@ -42,7 +42,7 @@ int main() {
 				cout << "Exiting Program... " << endl;
 				break;
 		}
-	} while(choice !=3);
+	} while(choice != 3);
 }
 
 void printMenu() {
