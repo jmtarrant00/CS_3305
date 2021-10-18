@@ -10,9 +10,10 @@
   <Project Name="A3_Node1" Path="A3_Node1/A3_Node1.project" Active="No"/>
   <Project Name="A3_Node1_New" Path="A3_Node1_New/A3_Node1_New.project" Active="No"/>
   <Project Name="A4_Stacks" Path="A4_Stacks/A4_Stacks.project" Active="No"/>
-  <Project Name="A4_Queues" Path="A4_Queues/A4_Queues.project" Active="Yes"/>
+  <Project Name="A4_Queues" Path="A4_Queues/A4_Queues.project" Active="No"/>
   <Project Name="Prct_Stacks" Path="Prct_Stacks/Prct_Stacks.project" Active="No"/>
   <Project Name="Prct_Queues" Path="Prct_Queues/Prct_Queues.project" Active="No"/>
+  <Project Name="A5_Vowels" Path="A5_Vowels/A5_Vowels.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -30,6 +31,7 @@
       <Project Name="A4_Queues" ConfigName="Debug"/>
       <Project Name="Prct_Stacks" ConfigName="Debug"/>
       <Project Name="Prct_Queues" ConfigName="Debug"/>
+      <Project Name="A5_Vowels" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -47,6 +49,7 @@
       <Project Name="A4_Queues" ConfigName="Release"/>
       <Project Name="Prct_Stacks" ConfigName="Release"/>
       <Project Name="Prct_Queues" ConfigName="Release"/>
+      <Project Name="A5_Vowels" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
