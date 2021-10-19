@@ -6,15 +6,15 @@
 ProjectName            :=A5_Vowels
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
-ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A5_Vowels
+WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
+ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A5_Vowels
 IntermediateDirectory  :=../build-$(ConfigurationName)/A5_Vowels
 OutDir                 :=../build-$(ConfigurationName)/A5_Vowels
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Jonathan
-Date                   :=18/10/2021
+User                   :=tiger
+Date                   :=19/10/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/A5_Vowels/vowels.cpp$(ObjectSuffix): vowels.cpp ../build-$(ConfigurationName)/A5_Vowels/vowels.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A5_Vowels/vowels.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/vowels.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A5_Vowels/vowels.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/vowels.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A5_Vowels/vowels.cpp$(DependSuffix): vowels.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A5_Vowels/vowels.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A5_Vowels/vowels.cpp$(DependSuffix) -MM vowels.cpp
 
