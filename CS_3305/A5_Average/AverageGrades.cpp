@@ -132,15 +132,18 @@ int findAverage(int grades[], int i, int classSize) {
 	// Precondition: grades[] has elements, i and classSize are non-negative
 	// Postcondition: returns the average grade of the class
 	
-	// if the class size is 1, return the first and only element in the array
+	// Base Case
+	// When i is one less than class size, the function will
+	// only return the grade at that index
 	if (i == classSize - 1) {
 		return grades[i];
 	}
-	
-	// base case: if i is 
+	 
+	// this if starts off the recursion
 	if (i == 0) {
 		return ((grades[i] + findAverage(grades, i + 1, classSize)) / classSize);
 	}
 	
+	// recusive call
 	return (grades[i] + findAverage(grades, i + 1, classSize));
 }
