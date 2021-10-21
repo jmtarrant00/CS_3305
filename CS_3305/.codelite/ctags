@@ -1,3 +1,10 @@
+std	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr {$/;"	namespace	line:1
+shared_ptr	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr { $/;"	class	line:1	namespace:std
+operator ->	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _Tp* operator->();$/;"	prototype	line:2	class:std::shared_ptr	access:private	signature:()	returns:_Tp 
+reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr );$/;"	prototype	line:3	class:std::shared_ptr	access:private	signature:( Y* ptr )	returns:void 
+reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d );$/;"	prototype	line:4	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d )	returns:void 
+reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d, Alloc alloc );$/;"	prototype	line:5	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d, Alloc alloc )	returns:void 
+get	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _T* get() const;$/;"	prototype	line:6	class:std::shared_ptr	access:private	signature:() const	returns:_T 
 
 
 
@@ -16,6 +23,55 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+printMenu	D:\GitHub\CS_3305\CS_3305\A5_Vowels\vowels.cpp	/^void printMenu();$/;"	prototype	line:14	signature:()	returns:void 
+countVowels	D:\GitHub\CS_3305\CS_3305\A5_Vowels\vowels.cpp	/^int countVowels(string input, string vowels);$/;"	prototype	line:15	signature:(string input, string vowels)	returns:int 
+main	D:\GitHub\CS_3305\CS_3305\A5_Vowels\vowels.cpp	/^int main() {$/;"	function	line:17	signature:()	returns:int 
+printMenu	D:\GitHub\CS_3305\CS_3305\A5_Vowels\vowels.cpp	/^void printMenu() {$/;"	function	line:56	signature:()	returns:void 
+countVowels	D:\GitHub\CS_3305\CS_3305\A5_Vowels\vowels.cpp	/^int countVowels(string input, string vowels) {$/;"	function	line:66	signature:(string input, string vowels)	returns:int 
+
+printMenu	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^void printMenu();$/;"	prototype	line:14	signature:()	returns:void 
+getClassSize	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int getClassSize();$/;"	prototype	line:19	signature:()	returns:int 
+getGrades	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int* getGrades(int classSize);$/;"	prototype	line:24	signature:(int classSize)	returns:int 
+findAverage	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int findAverage(int grades[], int i, int classSize); $/;"	prototype	line:29	signature:(int grades[], int i, int classSize)	returns:int 
+main	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int main() {$/;"	function	line:31	signature:()	returns:int 
+printMenu	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^void printMenu(){$/;"	function	line:71	signature:()	returns:void 
+getClassSize	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int getClassSize(){$/;"	function	line:84	signature:()	returns:int 
+getGrades	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int* getGrades(int classSize) {$/;"	function	line:101	signature:(int classSize)	returns:int 
+findAverage	D:\GitHub\CS_3305\CS_3305\A5_Average\AverageGrades.cpp	/^int findAverage(int grades[], int i, int classSize) {$/;"	function	line:131	signature:(int grades[], int i, int classSize)	returns:int 
 
 
 
