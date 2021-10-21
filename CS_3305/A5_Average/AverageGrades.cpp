@@ -16,21 +16,21 @@ void printMenu();
 // This function gets the class size from the user
 // It also checks to see if the class size is negative
 // but it allows the user to enter 0 as a size
-int getClassSize();
+double getClassSize();
 
 // This function gets the grade of the class from the user
 // It stores the grades in a dynamic array, and returns a pointer 
 // to the main function 
-int* getGrades(int classSize);
+int* getGrades(double classSize);
 
 // This function recursively calculates the average grade of the class
 // The first parameter is the grades array. The second parameter is a counter
 // and the third parameter is the size of the class
-int findAverage(int grades[], int i, int classSize); 
+double findAverage(int grades[], int i, double classSize); 
 
 int main() {
 	int choice = 0; 		 // initializes choice to 0
-	int classSize; 			 // stores the size of the class for both the get grades and average function
+	double classSize;		 // stores the size of the class for both the get grades and average function
 	int *grades; 			 // pointer to store the grades to pass to the average function
 	bool choicePass = false; // used to exit the do while that checks the menu input
 	do {
@@ -81,11 +81,11 @@ void printMenu(){
 	cout << "Please enter an option: ";
 }
 
-int getClassSize(){
+double getClassSize(){
 	// Precondition: None
 	// Postcondition: takes input for the number of students in the class
 	// and checks to make sure the class size is >= 0
-	int classSize;
+	double classSize;
 	cout << "Please enter the class size: ";
 	do {
 		// Takes input for size and checks if it's >= 0
@@ -98,11 +98,11 @@ int getClassSize(){
 	return classSize;
 }
 
-int* getGrades(int classSize) {
+int* getGrades(double classSize) {
 	// Precondition: classSize is non-negative
 	// Postcondition: returns pointer to an array that contains 
 	// the grades for the class
-	int* gradesInput = new int[classSize];
+	int* gradesInput = new int[(int) classSize];
 	for (int i = 0; i < classSize; i++) {
 		switch(i + 1){
 			// switches the output based on the index of the grade being entered
@@ -128,11 +128,10 @@ int* getGrades(int classSize) {
 	
 }
 
-int findAverage(int grades[], int i, int classSize) {
+double findAverage(int grades[], int i, double classSize) {
 	// Precondition: grades[] has elements, i and classSize are non-negative
 	// Postcondition: returns the average grade of the class
 	
-	int sum;
 	// Base Case
 	// When i is one less than class size, the function will
 	// only return the grade at that index
