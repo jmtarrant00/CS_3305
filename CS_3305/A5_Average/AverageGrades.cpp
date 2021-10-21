@@ -132,6 +132,7 @@ int findAverage(int grades[], int i, int classSize) {
 	// Precondition: grades[] has elements, i and classSize are non-negative
 	// Postcondition: returns the average grade of the class
 	
+	int sum;
 	// Base Case
 	// When i is one less than class size, the function will
 	// only return the grade at that index
@@ -139,11 +140,12 @@ int findAverage(int grades[], int i, int classSize) {
 		return grades[i];
 	}
 	 
-	// this if starts off the recursion
+	// this if starts off the recursion and it ensures that the program only divides once
 	if (i == 0) {
 		return ((grades[i] + findAverage(grades, i + 1, classSize)) / classSize);
 	}
 	
-	// recusive call
+	// recusive call. It doesn't divide, because that would mess up the calculations to have the function 
+	// divide every single time 
 	return (grades[i] + findAverage(grades, i + 1, classSize));
 }

@@ -6,15 +6,15 @@
 ProjectName            :=A5_Average
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
-WorkspacePath          :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305
-ProjectPath            :=C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A5_Average
+WorkspacePath          :=D:/GitHub/CS_3305/CS_3305
+ProjectPath            :=D:/GitHub/CS_3305/CS_3305/A5_Average
 IntermediateDirectory  :=../build-$(ConfigurationName)/A5_Average
 OutDir                 :=../build-$(ConfigurationName)/A5_Average
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=tiger
-Date                   :=20/10/2021
+User                   :=Jonathan
+Date                   :=21/10/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 ../build-$(ConfigurationName)/A5_Average/AverageGrades.cpp$(ObjectSuffix): AverageGrades.cpp ../build-$(ConfigurationName)/A5_Average/AverageGrades.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/tiger/Documents/GitHub/CS_3305/CS_3305/A5_Average/AverageGrades.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/AverageGrades.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GitHub/CS_3305/CS_3305/A5_Average/AverageGrades.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/AverageGrades.cpp$(ObjectSuffix) $(IncludePath)
 ../build-$(ConfigurationName)/A5_Average/AverageGrades.cpp$(DependSuffix): AverageGrades.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/A5_Average/AverageGrades.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/A5_Average/AverageGrades.cpp$(DependSuffix) -MM AverageGrades.cpp
 
