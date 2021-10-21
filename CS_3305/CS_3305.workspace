@@ -13,8 +13,8 @@
   <Project Name="A4_Queues" Path="A4_Queues/A4_Queues.project" Active="No"/>
   <Project Name="Prct_Stacks" Path="Prct_Stacks/Prct_Stacks.project" Active="No"/>
   <Project Name="Prct_Queues" Path="Prct_Queues/Prct_Queues.project" Active="No"/>
-  <Project Name="A5_Vowels" Path="A5_Vowels/A5_Vowels.project" Active="No"/>
-  <Project Name="A5_Average" Path="A5_Average/A5_Average.project" Active="Yes"/>
+  <Project Name="A5_Vowels" Path="A5_Vowels/A5_Vowels.project" Active="Yes"/>
+  <Project Name="A5_Average" Path="A5_Average/A5_Average.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
