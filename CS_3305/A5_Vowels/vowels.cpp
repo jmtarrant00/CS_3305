@@ -15,6 +15,23 @@ using namespace std; // allows all std lib items to be used
 // it also prompts the user to enter an option
 void printMenu();
 
+// This function checks the input for a number, and if it finds 
+// a number in the input, it converts it from a string to an int
+// then returns the int for the choice
+int getInput() {
+	string command = "";
+	int number = 0;
+	getline(cin, command); // Take the entire line as input
+	for(size_t i = 0; i < command.length(); i++) {
+		if(!isdigit(command[i])) { 
+			// if there is a non-int in the input, return 0
+			return number;
+		}
+	}
+	number = stoi(command); // convert the number string to an int
+	return number;
+}
+
 // This function recursively counts the vowels in the input string
 // it takes the string as input, as well as a predefined string of 
 // the vowels. This predefined string is used to check for vowels in
@@ -28,21 +45,9 @@ int main() {
 	string vowels = "aeiou"; // string of all vowels 
 	int choice;				 // stores the choice of the user
 	int numVowels = 0;		 // stores the number of vowels 
-	bool choicePass = false; // used to exit the do while that checks the 
 	do{
-		do {
-			// This do while loop checks the value input for the menu options. It won't move on until choicePass is true
-			// which only happens when the user enters a valid option
-			printMenu();
-			cin >> choice;
-			if (choice == 1 || choice == 2 || choice == 3) {
-				choicePass = true;
-				cout << endl;
-			} else {
-				cout << "Please enter a valid option." << endl;
-				cout << "\n";
-			}
-		} while (choicePass == false);
+		printMenu();
+		choice = getInput();
 		switch(choice){
 			// This switch statement allows the user to interact with the program 
 			case 1: 

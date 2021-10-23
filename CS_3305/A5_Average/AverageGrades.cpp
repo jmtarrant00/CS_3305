@@ -6,12 +6,30 @@
 
 #include <cstdlib>  // provides EXIT_SUCCESS and std library
 #include <iostream> // provides cout and cin
+#include <limits>	// provides numeric_limits
 
 using namespace std; // allows all std lib items to be used
 
 //This function prints the menu that is used throughout the program
 // it also prompts the user to enter an option
 void printMenu();
+
+// This function checks the input for a number, and if it finds 
+// a number in the input, it converts it from a string to an int
+// then returns the int for the choice
+int getInput() {
+	string command = "";
+	int number = 0;
+	getline(cin, command); // Take the entire line as input
+	for(size_t i = 0; i < command.length(); i++) {
+		if(!isdigit(command[i])) { 
+			// if there is a non-int in the input, return 0
+			return number;
+		}
+	}
+	number = stoi(command); // convert the number string to an int
+	return number;
+}
 
 // This function gets the class size from the user
 // It also checks to see if the class size is negative
@@ -29,24 +47,12 @@ int* getGrades(double classSize);
 double findAverage(int grades[], int i, double classSize); 
 
 int main() {
-	int choice = 0; 		 // initializes choice to 0
-	double classSize;		 // stores the size of the class for both the get grades and average function
+	int choice;     		 // initializes choice to 0
+	double classSize = 1;	 // stores the size of the class for both the get grades and average function
 	int *grades; 			 // pointer to store the grades to pass to the average function
-	bool choicePass = false; // used to exit the do while that checks the menu input
 	do {
-		do { 
-			// This do while loop checks the value input for the menu options. It won't move on until choicePass is true
-			// which only happens when the user enters a valid option
-			printMenu();
-			cin >> choice;
-			if (choice >= 1 && choice <= 4) {
-				choicePass = true;
-				cout << endl;
-			} else {
-				cout << "Please enter a valid option." << endl;
-				cout << "\n";
-			}
-		} while (choicePass == false);
+		printMenu();
+		classSize = getInput();
 		switch(choice) {
 			// This switch statement is what determines what is executed depending on what the user entered
 			case 1:
@@ -63,6 +69,8 @@ int main() {
 			case 4: 
 				cout << "Exiting Program..." << endl;
 				break;
+			default:
+				cout << "Please enter a valid option" << endl;
 		}
 	} while (choice != 4);
 	return EXIT_SUCCESS;
@@ -86,14 +94,14 @@ double getClassSize(){
 	// Postcondition: takes input for the number of students in the class
 	// and checks to make sure the class size is >= 0
 	double classSize;
-	cout << "Please enter the class size: ";
 	do {
 		// Takes input for size and checks if it's >= 0
-		cin >> classSize;
-		if (classSize < 0) {
-			cout << "Please enter a size greater than or equal to 0." << endl;
+		cout << "Please enter the class size: ";
+		classSize = getInput();
+		if (classSize <= 0) {
+			cout << "Please enter a size greater than or equal to 1." << endl;
 		}
-	} while (classSize < 0);
+	} while (classSize <= 0);
 	
 	return classSize;
 }
