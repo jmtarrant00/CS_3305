@@ -1,10 +1,3 @@
-std	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr {$/;"	namespace	line:1
-shared_ptr	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr { $/;"	class	line:1	namespace:std
-operator ->	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _Tp* operator->();$/;"	prototype	line:2	class:std::shared_ptr	access:private	signature:()	returns:_Tp 
-reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr );$/;"	prototype	line:3	class:std::shared_ptr	access:private	signature:( Y* ptr )	returns:void 
-reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d );$/;"	prototype	line:4	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d )	returns:void 
-reset	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d, Alloc alloc );$/;"	prototype	line:5	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d, Alloc alloc )	returns:void 
-get	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    _T* get() const;$/;"	prototype	line:6	class:std::shared_ptr	access:private	signature:() const	returns:_T 
 
 
 
@@ -17,30 +10,6 @@ get	C:\Users\Jonathan\AppData\Roaming\codelite\tmp\codelite_templates.hpp	/^    
 
 
 
-BINTREE_H	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^#define BINTREE_H$/;"	macro	line:103
-binary_tree_node	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item>     class binary_tree_node $/;"	class	line:108
-value_type	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	typedef Item value_type; $/;"	typedef	line:112	class:binary_tree_node	access:public
-binary_tree_node	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	binary_tree_node($/;"	function	line:114	class:binary_tree_node	access:public	signature:( const Item& init_data = Item( ), binary_tree_node* init_left = NULL, binary_tree_node* init_right = NULL )
-data	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	Item& data( ) { return data_field; }$/;"	function	line:125	class:binary_tree_node	access:public	signature:( )	returns:Item 
-left	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	binary_tree_node* &left( ) { return left_field; }$/;"	function	line:126	class:binary_tree_node	access:public	signature:( )	returns:binary_tree_node 
-right	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	binary_tree_node* &right( ) { return right_field; }$/;"	function	line:127	class:binary_tree_node	access:public	signature:( )	returns:binary_tree_node 
-set_data	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	void set_data(const Item& new_data) { data_field = new_data; }$/;"	function	line:128	class:binary_tree_node	access:public	signature:(const Item& new_data)	returns:void 
-set_left	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	void set_left(binary_tree_node* new_left) { left_field = new_left; }$/;"	function	line:129	class:binary_tree_node	access:public	signature:(binary_tree_node* new_left)	returns:void 
-set_right	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	void set_right(binary_tree_node* new_right) { right_field = new_right; }$/;"	function	line:130	class:binary_tree_node	access:public	signature:(binary_tree_node* new_right)	returns:void 
-data	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	const Item& data( ) const { return data_field; }$/;"	function	line:132	class:binary_tree_node	access:public	signature:( ) const	returns:const Item 
-left	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	const binary_tree_node* left( ) const { return left_field; }$/;"	function	line:133	class:binary_tree_node	access:public	signature:( ) const	returns:const binary_tree_node 
-right	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	const binary_tree_node* right( ) const { return right_field; }$/;"	function	line:134	class:binary_tree_node	access:public	signature:( ) const	returns:const binary_tree_node 
-is_leaf	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	bool is_leaf( ) const$/;"	function	line:135	class:binary_tree_node	access:public	signature:( ) const	returns:bool 
-data_field	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	Item data_field;$/;"	member	line:138	class:binary_tree_node	access:private
-left_field	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	binary_tree_node *left_field;$/;"	member	line:139	class:binary_tree_node	access:private
-right_field	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^	binary_tree_node *right_field;$/;"	member	line:140	class:binary_tree_node	access:private
-inorder	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Process, class BTNode>     void inorder(Process f, BTNode* node_ptr);  $/;"	prototype	line:145	signature:(Process f, BTNode* node_ptr)	returns:template void 
-preorder	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Process, class BTNode>     void preorder(Process f, BTNode* node_ptr); $/;"	prototype	line:148	signature:(Process f, BTNode* node_ptr)	returns:template void 
-postorder	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Process, class BTNode>     void postorder(Process f, BTNode* node_ptr);  $/;"	prototype	line:151	signature:(Process f, BTNode* node_ptr)	returns:template void 
-print	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item, class SizeType>     void print(binary_tree_node<Item>* node_ptr, SizeType depth); $/;"	prototype	line:154	signature:(binary_tree_node<Item>* node_ptr, SizeType depth)	returns:template void 
-tree_clear	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item>     void tree_clear(binary_tree_node<Item>*& root_ptr); $/;"	prototype	line:157	signature:(binary_tree_node<Item>*& root_ptr)	returns:template void 
-tree_copy	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item>     binary_tree_node<Item>* tree_copy(const binary_tree_node<Item>* root_ptr); $/;"	prototype	line:160	signature:(const binary_tree_node<Item>* root_ptr)	returns:template binary_tree_node <Item> 
-tree_size	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item>     std::size_t tree_size(const binary_tree_node<Item>* node_ptr); $/;"	prototype	line:163	signature:(const binary_tree_node<Item>* node_ptr)	returns:template std :: size_t 
 
 
 
@@ -57,60 +26,6 @@ tree_size	D:\GitHub\CS_3305\CS_3305\A6_BST\bintree.h	/^    template <class Item>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-BST_H	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^#define BST_H$/;"	macro	line:2
-binary_search_tree	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^template <class T> class binary_search_tree { $/;"	class	line:9
-binary_search_tree	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    binary_search_tree() {$/;"	function	line:12	class:binary_search_tree	access:public	signature:()
-search	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    binary_tree_node<T> *search(const T &key) const;$/;"	prototype	line:21	class:binary_search_tree	access:public	signature:(const T &key) const	returns:binary_tree_node <T> 
-insert	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    bool insert(const T &item);$/;"	prototype	line:29	class:binary_search_tree	access:public	signature:(const T &item)	returns:bool 
-remove	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    bool remove(const T &item);$/;"	prototype	line:37	class:binary_search_tree	access:public	signature:(const T &item)	returns:bool 
-~binary_search_tree	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    ~binary_search_tree();$/;"	prototype	line:41	class:binary_search_tree	access:public	signature:()
-is_balanced	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    int is_balanced();$/;"	prototype	line:48	class:binary_search_tree	access:public	signature:()	returns:int 
-operator <<	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    template <class S>     friend std::ostream &operator<<(std::ostream &out, const binary_search_tree<S> &tree); $/;"	prototype	line:51	class:binary_search_tree	access:friend	signature:(std::ostream &out, const binary_search_tree<S> &tree)	returns:template friend std :: ostream 
-get_root	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    binary_tree_node<T> *get_root() { return root; }$/;"	function	line:53	class:binary_search_tree	access:public	signature:()	returns:binary_tree_node <T> 
-root	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^    binary_tree_node<T> *root;$/;"	member	line:57	class:binary_search_tree	access:private
-operator <<	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^template <class T> std::ostream &operator<<(std::ostream &out, const binary_tree_node<T> *root); $/;"	prototype	line:62	signature:(std::ostream &out, const binary_tree_node<T> *root)	returns:template std :: ostream 
-check_balanced	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^template <class T> int check_balanced(binary_tree_node<T> *root); $/;"	prototype	line:69	signature:(binary_tree_node<T> *root)	returns:template int 
-bst_remove	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^template <class Item> bool bst_remove( $/;"	prototype	line:73	signature:( binary_tree_node<Item>*& root_ptr, const Item& target )	returns:template bool 
-bst_remove_max	D:\GitHub\CS_3305\CS_3305\A6_BST\bst.h	/^template <class Item> void bst_remove_max( $/;"	prototype	line:85	signature:( binary_tree_node<Item>*& root_ptr, Item& removed )	returns:template void 
 
 
 
