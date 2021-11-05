@@ -32,9 +32,11 @@ int main(){
 	print(node, 0);
 	cout << endl << "Balanced? " << check_balanced(node) << endl;
 	
-	cout << cout << "================= Remove Root =================" << endl;
-	
-	
+	cout << "================= Remove Root =================" << endl;
+	string data = node -> data();
+	cout << "Remove: " << words[size / 2] << endl;
+	bst_remove(node, data);
+	print(node, 0);	
 	
 	return EXIT_SUCCESS;
 }

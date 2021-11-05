@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ A6_BST - Debug ]----------"
-	@cd "A6_BST" && "$(MAKE)" -f  "A6_BST.mk"
+	@echo "----------Building project:[ A6_remDupes - Debug ]----------"
+	@cd "A6_remDupes" && "$(MAKE)" -f  "A6_remDupes.mk"
 clean:
-	@echo "----------Cleaning project:[ A6_BST - Debug ]----------"
-	@cd "A6_BST" && "$(MAKE)" -f  "A6_BST.mk" clean
+	@echo "----------Cleaning project:[ A6_remDupes - Debug ]----------"
+	@cd "A6_remDupes" && "$(MAKE)" -f  "A6_remDupes.mk" clean
