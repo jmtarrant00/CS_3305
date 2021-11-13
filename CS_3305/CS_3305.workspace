@@ -16,8 +16,9 @@
   <Project Name="A5_Vowels" Path="A5_Vowels/A5_Vowels.project" Active="No"/>
   <Project Name="A5_Average" Path="A5_Average/A5_Average.project" Active="No"/>
   <Project Name="A6_BST_FILE" Path="A6_BST_FILE/A6_BST_FILE.project" Active="No"/>
-  <Project Name="A6_BST" Path="A6_BST/A6_BST.project" Active="Yes"/>
+  <Project Name="A6_BST" Path="A6_BST/A6_BST.project" Active="No"/>
   <Project Name="A6_remDupes" Path="A6_remDupes/A6_remDupes.project" Active="No"/>
+  <Project Name="A7_Heaps" Path="A7_Heaps/A7_Heaps.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -40,6 +41,7 @@
       <Project Name="A6_BST_FILE" ConfigName="Debug"/>
       <Project Name="A6_BST" ConfigName="Debug"/>
       <Project Name="A6_remDupes" ConfigName="Debug"/>
+      <Project Name="A7_Heaps" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -62,6 +64,7 @@
       <Project Name="A6_BST_FILE" ConfigName="Release"/>
       <Project Name="A6_BST" ConfigName="Release"/>
       <Project Name="A6_remDupes" ConfigName="Release"/>
+      <Project Name="A7_Heaps" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
