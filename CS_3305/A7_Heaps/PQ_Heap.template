@@ -1,0 +1,66 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 7
+
+#include "PQ_Heap.h"
+
+
+// PQ Heap Constructor
+template <class T>
+priority_queue_heap<T>::priority_queue_heap(){}
+
+// Checks if the heap is empty
+template<class T>
+bool priority_queue_heap<T>::is_empty() const{
+	return root.is_empty();
+}
+
+// Check if the heap is full by comparing the current size to capacity
+template <class T>
+bool priority_queue_heap<T>::is_full() const{
+	return root.is_full();
+}
+
+// Returns the root of the Heap
+template <class T>
+T priority_queue_heap<T>::front(){
+	return root.get_data(0);
+}
+
+// Returns the current size of the heap
+template <class T>
+int priority_queue_heap<T>:: size(){
+	return root.get_size();
+}
+
+// Dequeue and return the data stored in the root node
+template <class T>
+T priority_queue_heap<T>::dequeue(){
+	return root.remove();
+}
+
+// Enqueue a node, crash if other failsafes fail
+template <class T>
+void priority_queue_heap<T>::enqueue(const T& value){
+	assert(!is_full());
+	root.insert(value);
+	return;
+}
+
+// Check the current size of the heap and call  check_heap()
+template <class T>
+void priority_queue_heap<T>::print_queue(){
+	if(!is_empty())
+		root.check_heap();
+	else std::cout << "The queue is empty" << std::endl;
+	return;
+}
+
+// Recycle queue to be reused
+template <class T>
+void priority_queue_heap<T>::recycle_queue(){
+	root.recycle_heap();
+	return;
+}

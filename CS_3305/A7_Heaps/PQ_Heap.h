@@ -1,9 +1,19 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 7
+
+#include "heap.h"
+
 #ifndef PRIORITY_QUEUE_HEAP_H
 #define PRIORITY_QUEUE_HEAP_H
 
+
 template <class T>
 class priority_queue_heap {
-	
+public:
+		
 	priority_queue_heap();
 	
     // Return true if priority queue is empty; otherwise return false
@@ -26,6 +36,13 @@ class priority_queue_heap {
    // Inserts the 'value' into the priority queue.
    // Precondition: priority queue is not full
    void enqueue(const T& value);
+   
+   void print_queue();
+   
+   void recycle_queue();
+   
+private:
+   heap<T> root;
 
 };
 

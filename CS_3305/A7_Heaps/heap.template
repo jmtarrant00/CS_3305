@@ -1,3 +1,9 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 7
+
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
@@ -136,5 +142,8 @@ bool heap<T>::check_heap() {
 }
 
 
-
+template<class T>
+void heap<T>::recycle_heap() {
+	size = 0;
+}
 

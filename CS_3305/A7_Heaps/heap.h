@@ -1,3 +1,8 @@
+// Name: Jonathan Tarrant
+// Class: CS 3305/Section 03
+// Term: Fall 2021
+// Instructor: Dr. Haddad
+// Assignment: 7
 #ifndef HEAP_H
 #define HEAP_H
 
@@ -36,6 +41,16 @@ public:
      * Prints 'check' for each parent that is greater than or equal to its children
      */
     bool check_heap();
+	
+	T get_data(int index) { 
+		return data[index]; 
+	}
+	
+	int get_size() { 
+		return size; 
+	}
+	
+	void recycle_heap();
 
 private:
     T data[CAPACITY];
