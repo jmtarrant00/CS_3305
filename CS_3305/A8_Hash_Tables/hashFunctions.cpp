@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
+#include <algorithm>
 
 using namespace std;
 
@@ -15,7 +16,13 @@ void printMenu();
 
 int getInput();
 
-void hf1(int *table[50][2], int keys[]);
+void fillTable(int table[][2]);
+
+void printTable(int table[][2]);
+
+void sumProbes(int table[][2]);
+
+void hf1(int table[][2], int keys[]);
 
 void hf2(int *table[50][2], int keys[]);
 
@@ -24,22 +31,24 @@ void hf3(int *table[50][2], int keys[]);
 void hf4(int *table[50][2], int keys[]);
 
 int main() {
-	int* Table[50][2];
 	int choice = 0;
+	int Table1[50][2];
+//	int *Table2[50][2];
+//	int *Table3[50][2];
+//	int *Table4[50][2];
 	int keys[50] = { 1234, 8234, 7867, 1009, 5438, 4312, 3420, 9487, 5418, 5299,
 		5078, 8239, 1208, 5098, 5195, 5329, 4543, 3344, 7698, 5412,
 		5567, 5672, 7934, 1254, 6091, 8732, 3095, 1975, 3843, 5589,
 		5439, 8907, 4097, 3096, 4310, 5298, 9156, 3895, 6673, 7871,
 		5787, 9289, 4553, 7822, 8755, 3398, 6774, 8289, 7665, 5523 };
-	
 	do {
 		printMenu();
 		choice = getInput();
 		switch (choice) {
 			case 1:
 				cout << "Choice: " << choice << endl;
-				hf1(Table, keys);
-				break;
+				fillTable(Table1);
+				hf1(Table1, keys);
 			case 2:
 				cout << "Choice: " << choice << endl;
 				break;
@@ -84,6 +93,51 @@ int getInput() {
 	return number;
 }
 
-void hf1(int *table[50][2], int keys[]) {
+void fillTable(int table[][2]) {
+	for (int i=0; i<50; i++) {
+		table[i][1] = -1;
+		table[i][2] = 0;
+	}
+}
+
+void printTable(int table[][2]) {
+	cout << "Index     Key     probes" << endl;
+	cout << "----------------------------" << endl;
+	for(int i=0; i<50; i++) {
+		cout << "  " << i << "       " << table[i][1] << "        " << table[i][2] << endl;
+	}
+}
+
+void sumProbes(int table[][2]) {
+	int probesSum = 0;
+	for (int i=0; i<50; i++) {
+		probesSum += table[i][2];
+	}
+	cout << "Sum of probe values = " << probesSum << endl;
+}
+
+void hf1(int table[][2], int keys[]) {
+	int hash, probes = 0;
+	bool empty = false;
+	for (int i=0; i<50; i++) {
+		probes = 0;
+		hash = keys[i] % 50;
+		do {
+			if (table[hash][1] != -1) {
+				empty = false;
+				hash += 1;
+				probes += 1;
+				if (hash > 50) {
+					hash = 0;
+				}
+			} else {
+				empty = true;
+				table[hash][1] = keys[i];
+				table[hash][2] = probes;
+			}
+		} while (empty == false);
+	}
 	
+	printTable(table);
+	sumProbes(table);
 }
