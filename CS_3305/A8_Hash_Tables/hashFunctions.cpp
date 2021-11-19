@@ -9,6 +9,7 @@
 #include <string>
 #include <cassert>
 #include <algorithm>
+#include <cmath>
 
 using namespace std;
 
@@ -24,17 +25,19 @@ void sumProbes(int table[][2]);
 
 void hf1(int table[][2], int keys[]);
 
-void hf2(int *table[50][2], int keys[]);
+void hf2(int table[][2], int keys[]);
 
-void hf3(int *table[50][2], int keys[]);
+void hf3(int table[50][2], int keys[]);
+
+int h2(int key);
 
 void hf4(int *table[50][2], int keys[]);
 
 int main() {
 	int choice = 0;
 	int Table1[50][2];
-//	int *Table2[50][2];
-//	int *Table3[50][2];
+	int Table2[50][2];
+	int Table3[50][2];
 //	int *Table4[50][2];
 	int keys[50] = { 1234, 8234, 7867, 1009, 5438, 4312, 3420, 9487, 5418, 5299,
 		5078, 8239, 1208, 5098, 5195, 5329, 4543, 3344, 7698, 5412,
@@ -49,11 +52,16 @@ int main() {
 				cout << "Choice: " << choice << endl;
 				fillTable(Table1);
 				hf1(Table1, keys);
+				break;
 			case 2:
 				cout << "Choice: " << choice << endl;
+				fillTable(Table2);
+				hf2(Table2, keys);
 				break;
 			case 3:
 				cout << "Choice: " << choice << endl;
+				fillTable(Table3);
+				hf3(Table3, keys);
 				break;
 			case 4:
 				cout << "Choice: " << choice << endl;
@@ -126,18 +134,77 @@ void hf1(int table[][2], int keys[]) {
 			if (table[hash][1] != -1) {
 				empty = false;
 				hash += 1;
-				probes += 1;
 				if (hash > 50) {
 					hash = 0;
+					continue;
 				}
+				probes++;
 			} else {
 				empty = true;
 				table[hash][1] = keys[i];
 				table[hash][2] = probes;
 			}
-		} while (empty == false);
+		} while (!empty);
 	}
 	
 	printTable(table);
 	sumProbes(table);
+}
+
+void hf2(int table[][2], int keys[]) {
+	int hash, probes = 0;
+	bool empty = false;
+	for (int i=0; i<50; i++) {
+		probes = 0;
+		hash = keys[i] % 50;
+		do {
+			hash = (int)(hash + pow(probes, 2)) % 50;
+			if (table[hash][1] != -1) {
+				empty = false;
+				probes++;
+			} else {
+				empty = true;
+				table[hash][1] = keys[i];
+				table[hash][2] = probes;
+			}
+		} while (!empty);
+	}
+	printTable(table);
+	sumProbes(table);
+}
+
+void hf3(int table[][2], int keys[]) {
+	int hash, probes = 0, unhashed = 0;
+	bool empty = false;
+	bool hashed = true;
+	for (int i=0; i<50; i++) {
+		probes = 0;
+		hash = keys[i] % 50;
+		do {
+//			cout << "Hash: " << hash << endl;
+			if (table[hash][1] != -1) {
+				empty = false;
+				hash = (hash + ((probes + 1) * h2(keys[i]))) % 50;
+				if (probes > 50) {
+					cout << "Could not hash key " << keys[i] << " to the table" << endl;
+					hashed = false;
+					unhashed++;
+					break;
+				}
+				probes++;
+			} else {
+				empty = true;
+				hashed = true;
+				table[hash][1] = keys[i];
+				table[hash][2] = probes;
+			}
+		} while (!empty);
+	}
+	
+	printTable(table);
+	sumProbes(table);
+}
+
+int h2(int key) {
+	return ( 30 - key % 25);
 }
