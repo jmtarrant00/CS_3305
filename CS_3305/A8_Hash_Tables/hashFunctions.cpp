@@ -174,27 +174,24 @@ void hf2(int table[][2], int keys[]) {
 }
 
 void hf3(int table[][2], int keys[]) {
-	int hash, probes = 0, unhashed = 0;
+	int hash, probes = 0, unhashed = 0, j = 1, increment;
 	bool empty = false;
-	bool hashed = true;
 	for (int i=0; i<50; i++) {
 		probes = 0;
 		hash = keys[i] % 50;
 		do {
-//			cout << "Hash: " << hash << endl;
 			if (table[hash][1] != -1) {
 				empty = false;
-				hash = (hash + ((probes + 1) * h2(keys[i]))) % 50;
+				increment = j * h2(keys[i]);
+				hash = (hash + increment) % 50;
 				if (probes > 50) {
-					cout << "Could not hash key " << keys[i] << " to the table" << endl;
-					hashed = false;
+					cout << "Unable to hash key " << keys[i] << " into table" << endl;
 					unhashed++;
 					break;
 				}
 				probes++;
 			} else {
 				empty = true;
-				hashed = true;
 				table[hash][1] = keys[i];
 				table[hash][2] = probes;
 			}
@@ -202,9 +199,10 @@ void hf3(int table[][2], int keys[]) {
 	}
 	
 	printTable(table);
+	cout << "Total Number of Unhashed keys: " << unhashed << endl;
 	sumProbes(table);
 }
 
 int h2(int key) {
-	return ( 30 - key % 25);
+	return (30 - key % 25);
 }
