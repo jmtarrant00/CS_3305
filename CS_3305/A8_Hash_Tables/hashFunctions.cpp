@@ -27,18 +27,18 @@ void hf1(int table[][2], int keys[]);
 
 void hf2(int table[][2], int keys[]);
 
-void hf3(int table[50][2], int keys[]);
+void hf3(int table[][2], int keys[]);
 
 int h2(int key);
 
-void hf4(int *table[50][2], int keys[]);
+void hf4(int table[][2], int keys[]);
 
 int main() {
 	int choice = 0;
 	int Table1[50][2];
 	int Table2[50][2];
 	int Table3[50][2];
-//	int *Table4[50][2];
+	int Table4[50][2];
 	int keys[50] = { 1234, 8234, 7867, 1009, 5438, 4312, 3420, 9487, 5418, 5299,
 		5078, 8239, 1208, 5098, 5195, 5329, 4543, 3344, 7698, 5412,
 		5567, 5672, 7934, 1254, 6091, 8732, 3095, 1975, 3843, 5589,
@@ -65,6 +65,8 @@ int main() {
 				break;
 			case 4:
 				cout << "Choice: " << choice << endl;
+				fillTable(Table4);
+				hf4(Table4, keys);
 				break;
 			case 5:
 				cout << "Exiting Program..." << endl;
@@ -83,6 +85,7 @@ void printMenu() {
 	cout << "2: HF2 (Division Method with Quadratic Probing)" << endl;
 	cout << "3: HF3 (Division Method with Double Hashing)" << endl;
 	cout << "4: HF4 (Student Defined Function)" << endl;
+	cout << "5: Exit Program" << endl;
 	cout << endl;
 	cout << "Please select an option: ";
 }
@@ -152,16 +155,20 @@ void hf1(int table[][2], int keys[]) {
 }
 
 void hf2(int table[][2], int keys[]) {
-	int hash, probes = 0;
+	int hash, probes = 0, j = 1;
 	bool empty = false;
 	for (int i=0; i<50; i++) {
 		probes = 0;
 		hash = keys[i] % 50;
 		do {
-			hash = (int)(hash + pow(probes, 2)) % 50;
 			if (table[hash][1] != -1) {
+				hash = hash + pow(j, 2);
+				if (hash >= 50) {
+					hash %= 50;
+				}
 				empty = false;
 				probes++;
+				j++;
 			} else {
 				empty = true;
 				table[hash][1] = keys[i];
@@ -205,4 +212,35 @@ void hf3(int table[][2], int keys[]) {
 
 int h2(int key) {
 	return (30 - key % 25);
+}
+
+void hf4(int table[][2], int keys[]) {
+	int hash, probes = 0, unhashed = 0, j = 1, increment;
+	bool empty = false;
+	for (int i=0; i<50; i++) {
+		probes = 0;
+		hash = keys[i] % 50;
+		do {
+			if (table[hash][1] != -1) {
+				empty = false;
+				increment = j * h2(keys[i]);
+				hash = (hash + increment) % 50;
+				if (probes > 50) {
+					cout << "Unable to hash key " << keys[i] << " into table" << endl;
+					unhashed++;
+					break;
+				}
+				probes++;
+			} else {
+				empty = true;
+				table[hash][1] = keys[i];
+				table[hash][2] = probes;
+			}
+		} while (!empty);
+		j++;
+	}
+	
+	printTable(table);
+	cout << "Total Number of Unhashed keys: " << unhashed << endl;
+	sumProbes(table);
 }
