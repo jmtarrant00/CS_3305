@@ -19,7 +19,8 @@
   <Project Name="A6_BST" Path="A6_BST/A6_BST.project" Active="No"/>
   <Project Name="A6_remDupes" Path="A6_remDupes/A6_remDupes.project" Active="No"/>
   <Project Name="A7_Heaps" Path="A7_Heaps/A7_Heaps.project" Active="No"/>
-  <Project Name="A8_Hash_Tables" Path="A8_Hash_Tables/A8_Hash_Tables.project" Active="Yes"/>
+  <Project Name="A8_Hash_Tables" Path="A8_Hash_Tables/A8_Hash_Tables.project" Active="No"/>
+  <Project Name="A9_Graphs" Path="A9_Graphs/A9_Graphs.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -44,6 +45,7 @@
       <Project Name="A6_remDupes" ConfigName="Debug"/>
       <Project Name="A7_Heaps" ConfigName="Debug"/>
       <Project Name="A8_Hash_Tables" ConfigName="Debug"/>
+      <Project Name="A9_Graphs" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -68,6 +70,7 @@
       <Project Name="A6_remDupes" ConfigName="Release"/>
       <Project Name="A7_Heaps" ConfigName="Release"/>
       <Project Name="A8_Hash_Tables" ConfigName="Release"/>
+      <Project Name="A9_Graphs" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
