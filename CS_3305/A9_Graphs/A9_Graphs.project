@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="Reachability_Matrix.cpp"/>
+    <File Name="Reachability_Matrix2.cpp" ExcludeProjConfig="Debug;"/>
+    <File Name="Reachability_Matrix.cpp" ExcludeProjConfig=""/>
   </VirtualDirectory>
 </CodeLite_Project>
