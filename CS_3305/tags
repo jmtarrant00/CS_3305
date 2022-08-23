@@ -1,1 +1,10 @@
-_GLIBCXX_STRING	c:\MinGW\lib\gcc\mingw32\6.3.0\include\c++\string	/^#define _GLIBCXX_STRING	1$/;"	macro	line:34
+THINKING_CAP_H	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^#define THINKING_CAP_H$/;"	macro	line:2
+Thinking_Cap	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^class Thinking_Cap$/;"	class	line:7
+Thinking_Cap	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	Thinking_Cap();$/;"	prototype	line:10	class:Thinking_Cap	access:public	signature:()
+Read_Green	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	Read_Green(string green);$/;"	prototype	line:11	class:Thinking_Cap	access:public	signature:(string green)
+Read_Red	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	Read_Red(string red);$/;"	prototype	line:12	class:Thinking_Cap	access:public	signature:(string red)
+~Thinking_Cap	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	~Thinking_Cap();$/;"	prototype	line:13	class:Thinking_Cap	access:public	signature:()
+set_green	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	set_green(string green);$/;"	prototype	line:15	class:Thinking_Cap	access:private	signature:(string green)
+set_red	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	set_red(string red);$/;"	prototype	line:16	class:Thinking_Cap	access:private	signature:(string red)
+green	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	string green;$/;"	member	line:17	class:Thinking_Cap	access:private
+red	C:\Users\Jonathan\Documents\GitHub\CS_3305\CS_3305\Prct_Thinking_Cap\Thinking_Cap.h	/^	string red;$/;"	member	line:18	class:Thinking_Cap	access:private
